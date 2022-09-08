@@ -1,0 +1,20 @@
+{
+  "name": "bun-plugin-httpfile",
+  "version": "0.1.0",
+  "description": "Bun plugin for http file",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "cd demo; bun hello-http.js"
+  },
+  "keywords": [
+    "bun",
+    "httpfile"
+  ],
+  "author": "linux_china <libing.chen@gmail.com>",
+  "repository": "https://github.com/servicex-sh/bun-plugin-httpfile",
+  "license": "ISC",
+  "devDependencies": {
+    "bun-types": "^0.1.10"
+  }
+}
