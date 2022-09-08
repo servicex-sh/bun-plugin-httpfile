@@ -1,0 +1,37 @@
+### get my ip
+//@name my-ip
+GET https://httpbin.org/ip
+User-Agent: curl/7.47.0
+
+### post test
+//@name post-test
+POST https://{{host}}/post
+User-Agent: curl/7.47.0
+Content-Type: application/json
+
+{
+  "name": "{{nick}}",
+  "age": 42,
+  "uuid": "{{$uuid}}",
+  "demo": "hi` morning"
+}
+
+### GraphQL simple
+//@name graphqlSimple
+GRAPHQL https://httpbin.org/post
+
+query {
+    ip
+}
+
+### GraphQL demo with variables
+//@name graphqlDemo
+GRAPHQL https://graphql-server-demo.linux-china.workers.dev/graphql
+
+query demo($nick: String!) {
+   welcome(name : $nick )
+}
+
+{
+  "nick": "{{nick}}"
+}
